@@ -7,8 +7,8 @@ body{
 }
 .nav{
 	background-color: #34aced;
-	height: 180px;
 	margin-top: 50px;
+	position: relative;
 }
 .nav img{
 	width: 130px;
@@ -55,7 +55,7 @@ body{
 	lett: 10px;
 	display: block;
 	transition: .3s linear;
-}
+} 
 .body,.login{
 	display: flex;
 	align-items: center;
@@ -206,6 +206,9 @@ p.hover:hover{
 		height: 430px;
 	}
 }
+.img{
+	display: none;
+}
 @media only screen and (max-width: 560px){
 	.right{
 		clear: both;
@@ -215,4 +218,27 @@ p.hover:hover{
 		height: 600px;
 	}
 }
-
+@media only screen and (max-width: 500px){
+#menu{
+	display: none;
+	clear: both;
+	}
+.img{
+	display: block;
+}
+.menu{
+	float: left;
+	position: relative;
+}
+.menu ul{
+	display: block;
+}
+.menu ul li{
+	padding: 10px;
+	margin: 0px;
+	margin-left: 20px;
+}
+.sub-menu1{
+	position: relative;
+}
+}
