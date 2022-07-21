@@ -6,12 +6,13 @@
 	<title>Computer University Sittwe</title>
 <link rel="stylesheet" type="text/css" href="project.css">
 </head>
-<body>
+<body id="body">
 <div class="nav" id="nav"> <!-- Start of nav div -->
 	<img src="logo.png">
 	<img src="icon.png" style="width:40px;height: 40px; float: right; 	margin-top: 50px; cursor: pointer;" class="img" onclick="toggle()">
 <div class="menu" id="menu">
 	<ul>
+		<li><a href="">Home</a></li>
 		<li><a href="#" onclick="toggle1()">Course</a>
 			<div class="sub-menu1" id="sub-menu1">
 				<ul>
@@ -22,7 +23,7 @@
 				</ul>
 			</div>
 		</li>
-		<li><a href="">Home</a></li>
+		
 	</ul>
 </div>
 
@@ -45,7 +46,7 @@
 			<input type="checkbox">
 			<b style="font-weight: normal;">Remember username</b><br>
 		</label>
-		<a href="Computer University After login/index.html"><button>Login</button><br></a>
+		<a href="../Computer University After login/index.html"><button>Login</button><br></a>
 		</div>
 	
 		<div class="right">
@@ -84,17 +85,18 @@
 
 </div> <!-- End of Bottom Div-->
 <script type="text/javascript">
+
 	function toggle(){
 		var nav=document.getElementById("nav");
 		var x = document.getElementById("menu");
 		if(x.style.display=="none"){
 			x.style.display = "block";
+			x.style.transition=".3s block"
 		}
 		else{
 			x.style.display="none";
 		}
 	}
-
 		function toggle1(){
 
 		var z = document.getElementById("sub-menu1");
@@ -104,7 +106,9 @@
 		else{
 			z.style.display="none";
 		}
-	}
+		}
+
+
 </script>
 </body>
 </html>
