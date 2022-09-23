@@ -4,50 +4,171 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Computer University</title>
-<link rel="stylesheet" type="text/css" href="style.css">
 </head>
+<link rel="stylesheet" type="text/css" href="style.css">
 <body>
-<nav>
-	<img src="icon.png" class="hamburger">
-<div class="right">
-	<img src="bell.png">
-	<img src="message.png">
-</div>
-</nav>
-<div class="header">
-	<img src="logo.png" class="logo">
-	<img src="icon.png" class="img1" onclick="toggle()">
 
-	<div class="nav" id="nav"> <!-- Start of nav div -->
-<div class="menu" id="menu">
-	<ul>
-		<li><a href="#" onclick="toggle1()">Course</a>
-			<div class="sub-menu1" id="sub-menu1">
-				<ul>
-					<li><a href="">Semester I</a></li>
-					<li><a href="">Semester II</a></li>
-					<li><a href="">Section-A</a></li>
-					<li><a href="">Section-A (SEM-2)</a></li>
-				</ul>
-			</div>
-		</li>
-		<li><a href="">Home</a></li>
-	</ul>
+<div class="nav"> <!-- Header -->
+<nav>
+<img src="images/logo.png" class="img_left">
+<div class="h_text">
+<h1>Computer University Second Year(CT)</h1>	
 </div>
+<img src="images/logo.png" class="img_right">	
+</nav> 
+</div> <!-- End tag for header -->
+
+<div class="container">
+
+<div class="home">
+	<img src="images/icon.png" class="icon" onclick="toggle()" >
+	<div id="menu">
+			<ul>
+	<li><a href="" class="active">Home</a></li>
+	<li><a href="About_Us/index.html">About Us</a></li>
+	<li><a href="">Activities</a></li>
+	<li><a href="Login/index.html">Log In</a></li>
+</ul>
+	</div>
+
 </div>
+
+
+</div> <!-- End tag for class container -->
+
+<div class="container1">
+	<div class="slides">
+		<input type="radio" name="r" id="r1">
+		<input type="radio" name="r" id="r2">
+		<input type="radio" name="r" id="r3">
+		<input type="radio" name="r" id="r4">
+		<input type="radio" name="r" id="r5">
+		<div class="slide s1"><img src="images/uni.jpg"></div>
+		<div class="slide"><img src="images/2.jpg"></div>
+		<div class="slide"><img src="images/3.jpg"></div>
+		<div class="slide"><img src="images/4.jpeg"></div>
+		<div class="slide"><img src="images/1.jpg"></div>
+
+<div class="center">
+		<div class="bar_container">
+			<label for="r1" class="bar"></label>
+			<label for="r2" class="bar"></label>
+			<label for="r3" class="bar"></label>
+			<label for="r4" class="bar"></label>
+			<label for="r5" class="bar"></label>
+		</div>
 </div>
+	
+	</div> <!-- End tag for slides -->
+</div> <!-- End tag for center -->
+
+<div class="div1">
+	<table>
+		<tr>
+			<td><p>Day</p></td>
+			<td><p>8:30 to 10:15</p></td>
+			<td><p>9:25 to 10:15</p></td>
+			<td><p>10:20 to 11:10</p></td>
+			<td> </td>
+			<td><p>12:00 to 12:50 </p></td>
+			<td><p>12:55 to 1:45 </p></td>
+			<td><p>1:50 to 2:40</p></td>
+			<td><p>2:45 to 3:35</p></td>
+		</tr>
+		<tr>
+			<td><p>Mon</p></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><p>Tue</p></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><p>Wed</p></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><p>Thu</p></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><p>Fri</p></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+</div>
+
+<div class="bottom">
+<div class="txt_left">
+	<p class="header">ABOUT US</p>
+	<p>Start Learning Now</p>
+</div>
+
+<div class="txt_center">
+	<p class="header">INFORMATION FOR</p>
+	<a href="#"><p class="hover">Students</p></a>
+	<a href="#"><p class="hover">Teachers</p></a>
+	<a href="#"><p class="hover">Researchers</p></a>
+	<a href="#"><p class="hover">Guest</p></a>
+</div>	
+
+<div class="txt_right">
+	<p class="header">CONTACT US</p>
+	<div class="location"><img src="images/loaction1.png" class="img"><p>Union Street, Pyi Taw Thar quarter,Sittway</p></div>
+	<div class="contanct"><img src="images/call.png" class="img"><p>Phone:09408745962, 09689951203</p></div>
+	<div class="email"><img src="images/email.png" class="img"><p>E-mail:oomyohlaing@ucssittway.edu.mm</p></div>
+	<a href="#"><img src="images/facebook.jpg" class="img1"></a>
+</div>
+
+</div> <!-- End of Bottom Div-->
 
 <script type="text/javascript">
-		function toggle(){
+
+	function toggle(){
 		var x = document.getElementById("menu");
 		if(x.style.display=="none"){
 			x.style.display = "block";
+			x.style.transition=".3s block"
 		}
 		else{
 			x.style.display="none";
 		}
 	}
-
 		function toggle1(){
 
 		var z = document.getElementById("sub-menu1");
@@ -57,7 +178,10 @@
 		else{
 			z.style.display="none";
 		}
-	}
+		}
+
+
 </script>
+
 </body>
 </html>
