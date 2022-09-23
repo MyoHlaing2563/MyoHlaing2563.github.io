@@ -1,0 +1,349 @@
+*{
+	 margin: 0px;
+	 padding: 0px;
+}
+body{
+	 background: #34a8eb;
+}
+.nav{
+	display: flex;
+}
+.img_right,.img_left{
+	width: 80px;
+	height: 80px;
+}
+h1{
+	text-align: center;
+	margin-top: 20px;
+	font-size: 2.3vw;
+	color: black;
+}
+.nav{
+
+}
+.nav nav{
+	width: 100%;
+	display: inline-flex;
+	align-content: center;
+	justify-content: center;
+	margin: 0px;
+	padding: 0px;
+	background: #fced44;
+}
+nav div{
+	width: 100%;
+}
+.img_right{
+	float: right;
+}
+.img_left{
+	float: left;
+}
+ul li{
+	float: left;
+	margin-right: 20px;
+	list-style: none;
+	border-radius: 10px 0px 10px 0px;
+	padding: 0px;
+}
+ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+}
+ul li:hover{
+	background: red;
+	transition: 1.5s;
+}
+.active{
+	background: red;
+	transition: 1s;
+}
+.container{
+	padding: 0px;
+	margin: 0px;
+	position: relative;
+	display: flex;
+}
+.home{
+	background-color: #ff8000;
+	width: 100%;
+	clear: both;
+	overflow: hidden;
+		}
+.img img{
+	clear: both;
+	width: 100%;
+	height: 700px;
+
+}
+.container1{
+	width: 100%;
+	height: 600px;
+	position: relative;
+	overflow: hidden;
+}
+.slides{
+	width: 500%;
+	height: 100%;
+	display: flex;
+}
+.slide{
+	width: 20%;
+	transition: 1.6s;
+}
+.slide img{
+	width: 100%;
+	height: 100%;
+}
+.center{
+	width: 100%;
+	color: red;
+	position: absolute;
+	bottom: 10px;
+}
+.bar_container,.center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.bar_container{
+	position: absolute;
+	bottom: 0;
+}
+.bar{
+	border: 3px solid white;
+	margin: 5px;
+	padding: 10px 70px 10px 0px;
+	cursor: pointer;
+}
+.bar:hover{
+	background: #ff8000;
+	transition: 1s;
+	border-radius: 10px;
+}
+input[name="r"]{
+	position: absolute;
+	visibility: hidden;
+}
+#r1:checked ~ .s1{
+	margin-left: 0;
+} 
+#r2:checked ~ .s1{
+	margin-left: -20%;
+}
+#r3:checked ~ .s1{
+	margin-left: -40%;
+}
+#r4:checked ~ .s1{
+	margin-left: -60%;
+}
+#r5:checked ~ .s1{
+	margin-left: -80%;
+}
+.div1{
+	width: 100%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.div1 table{
+	border-collapse: collapse;
+	width: 100%;
+}
+.div1 td,th{
+	border: 2px solid #dddddd;
+	text-align: center;
+	padding: 8px;
+}
+.bottom{
+	background-color:#ff8000 ;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+.none{
+	color: #34aced;
+}
+.bottom p{
+	color: white;
+	margin-bottom: 5px;
+}
+.bottom a{
+	text-decoration: none;
+	color: black;
+}
+.txt_left,.txt_center,.txt_right{
+	margin-top: 30px;
+	float: left;
+	width: 30%;
+	height: 200px;
+}
+.txt_left{
+		margin-left: 60px;
+}
+.txt_right img{
+
+	display: inline;
+}
+.txt_center{
+}
+p.header{
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.location p{
+	margin-bottom: 20px;
+}
+.contanct p{
+	margin-bottom: 20px;
+}
+.email p{
+	margin-bottom: 20px;
+}
+.location img{
+	float: left;
+}
+.contanct img{
+	clear: both;
+	float: left;
+}
+.email img{
+	clear: both;
+	float: left;
+}
+.img{
+	width: 25px;
+	height: 25px;
+}
+.img1{
+	width: 50px;
+	height: 50px;
+	border-radius: 10px;
+}
+p.hover:hover{
+	color: black;
+}
+@media only screen and (max-width: 900px){
+	.txt_left,.txt_center,.txt_right{
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	.txt_left{
+		height: 30px;
+		margin: 0px;
+		margin-top: 30px;
+	}
+	.txt_center{
+		height: 100px;
+	}
+	.img{
+		width: 30px;
+		height: 30px;
+	}
+	.location,.contanct,.email{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+	}
+	.bottom{
+		/*height: 430px;*/
+	}
+}
+.img{
+	display: none;
+}
+/* Style for about us page */
+.about{
+	background: white;
+	height: 535px;
+}
+h2{
+	padding-top: 20px;
+} 
+.about p,h2{
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: justify;
+}
+.icon{
+	display: none;
+	cursor: pointer;
+}
+@media only screen and (max-width: 550px){
+	h1{
+		font-size: 15px;
+	}
+	#menu{
+		display: none;
+	}
+	.home ul li{
+		display: block;
+		clear: both;
+		margin: 0;
+		margin-left: 20px;
+		transition: 3s;
+	}	
+	.home{
+		display: block;
+	}
+	.active{
+		background: none;
+	}
+	.home ul li:hover{
+		background: none;
+	}
+	.home ul li a:hover{
+		color: yellow;
+		transition: 0.5s;
+	}
+	.icon{
+		display: block;
+		margin-left: 20px;
+	}
+	table p{
+		font-size: 10px;
+	}
+	.img_left{
+		width: 50px;
+		height: 50px;
+	}
+	.img_right{
+		width: 50px;
+		height: 50px;
+	}
+	.bar{
+		padding: 0px;
+		padding: 10px 20px 10px 20px;
+	}
+}
+@media only screen and (max-width: 280px){
+	h1{
+		font-size: 11px;
+	}
+	table p{
+		font-size: 7px;
+	}
+	p.header{
+	font-weight: bold;
+	margin-bottom: 7px;
+}
+.location p{
+	margin-bottom: 7px;
+}
+.contanct p{
+	margin-bottom: 7px;
+}
+.email p{
+	margin-bottom: 7px;
+}
+	.bar{
+		padding: 0px;
+		padding: 10px 13px 10px 13px;
+	}
+	table th,td{
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+}

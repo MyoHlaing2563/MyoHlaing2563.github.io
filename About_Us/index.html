@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About Us</title>
+<link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+<div class="nav"> <!-- Header -->
+<nav>
+<img src="../images/logo.png" class="img_left">
+<div class="h_text">
+<h1>Computer University Second Year(CT)</h1>	
+</div>
+<img src="../images/logo.png" class="img_right">	
+</nav> 
+</div> <!-- End tag for header -->
+
+<div class="container">
+
+<div class="home">
+	<img src="../images/icon.png" class="icon" onclick="toggle()" >
+	<div id="menu">
+			<ul>
+	<li><a href="../index.html">Home</a></li>
+	<li><a href="index.html"  class="active">About Us</a></li>
+	<li><a href="">Activities</a></li>
+	<li><a href="../Login/index.html">Log In</a></li>
+</ul>
+	</div>
+
+</div>
+</div>
+
+<div class="about">
+<h2>Background History</h2>
+<p>This page is for student purpose only.This page is created by U Myo Hlaing(Second Year) Computer University (Sittwe) at 2022 September 22.@Copyright from Computer University Sittwe.This page is created for fun.Only Front-End-Development.</p>	
+</div>
+
+<div class="bottom">
+<div class="txt_left">
+	<p class="header">ABOUT US</p>
+	<p>Start Learning Now</p>
+</div>
+
+<div class="txt_center">
+	<p class="header">INFORMATION FOR</p>
+	<a href="#"><p class="hover">Students</p></a>
+	<a href="#"><p class="hover">Teachers</p></a>
+	<a href="#"><p class="hover">Researchers</p></a>
+	<a href="#"><p class="hover">Guest</p></a>
+</div>	
+
+<div class="txt_right">
+	<p class="header">CONTACT US</p>
+	<div class="location"><img src="../images/loaction1.png" class="img"><p>Union Street, Pyi Taw Thar quarter,Sittway</p></div>
+	<div class="contanct"><img src="../images/call.png" class="img"><p>Phone:09408745962, 09689951203</p></div>
+	<div class="email"><img src="../images/email.png" class="img"><p>E-mail:oomyohlaing@ucssittway.edu.mm</p></div>
+	<a href="#"><img src="../images/facebook.jpg" class="img1"></a>
+</div>
+
+</div> <!-- End of Bottom Div-->
+
+<script type="text/javascript">
+
+	function toggle(){
+		var x = document.getElementById("menu");
+		if(x.style.display=="none"){
+			x.style.display = "block";
+			x.style.transition=".3s block"
+		}
+		else{
+			x.style.display="none";
+		}
+	}
+		function toggle1(){
+
+		var z = document.getElementById("sub-menu1");
+		if(z.style.display=="none"){
+			z.style.display = "block";
+		}
+		else{
+			z.style.display="none";
+		}
+		}
+
+
+</script>
+</body>
+</html>
